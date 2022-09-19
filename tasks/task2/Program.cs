@@ -6,9 +6,15 @@
 const int Size = 10;
 
 int[] numbers = CreateRandomArray (Size);
-Console.WriteLine($"Массив из случайных чисел - {numbers}");
+PrintArray (numbers);
 int Sum = CalcSum (numbers);
 Console.WriteLine($"Сумма элементов, стоящих на нечетных позициях равна {Sum}");
+
+void PrintArray (int[] numbers)
+{
+    foreach (int number in numbers)
+    System.Console.Write($"[{string.Join (",", number)}] ");
+}
 
 int [] CreateRandomArray (int Size)
 {

@@ -3,17 +3,17 @@
 
 const int Size = 10;
 
-int[] array = new int [Size];
+int[] array = new int[Size];
 for (int i = 0; i < Size; i++)
 {
-    array[i] = new Random().Next(100,999);
+    array[i] = new Random().Next(100, 999);
 }
-Console.WriteLine($"[{string.Join (",", array)}]");
+Console.WriteLine($"[{string.Join(",", array)}]");
 
 int CountEven = 0;
 for (int i = 0; i < array.Length; i++)
 {
-    if (array [i] % 2 == 0)
+    if (array[i] % 2 == 0)
     {
         CountEven++;
     }
